@@ -5,13 +5,14 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import BackgroundAnimation from "@/components/BackgroundAnimation";
+// import BackgroundAnimation from "@/components/BackgroundAnimation";
 import ThemeToggle from "@/components/ThemeToggle";
+import AnimatedIconsBackground from "@/components/AnimatedIconsBackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-500 relative">
-      <BackgroundAnimation />
+      <AnimatedIconsBackground />
       <ThemeToggle />
       <Navigation />
       <main>
