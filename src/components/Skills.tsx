@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Code, Database, Shield, Smartphone } from "lucide-react";
@@ -28,7 +27,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Web Development",
-      icon: <Code className="h-6 w-6 text-blue-400" />,
+      icon: <Code className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
       color: "blue",
       skills: [
         { name: "HTML/CSS/JavaScript", level: 95 },
@@ -39,7 +38,7 @@ const Skills = () => {
     },
     {
       title: "Database Management",
-      icon: <Database className="h-6 w-6 text-green-400" />,
+      icon: <Database className="h-6 w-6 text-green-600 dark:text-green-400" />,
       color: "green",
       skills: [
         { name: "MySQL", level: 95 },
@@ -50,7 +49,7 @@ const Skills = () => {
     },
     {
       title: "Network Security",
-      icon: <Shield className="h-6 w-6 text-red-400" />,
+      icon: <Shield className="h-6 w-6 text-red-600 dark:text-red-400" />,
       color: "red",
       skills: [
         { name: "CCNA", level: 90 },
@@ -61,7 +60,7 @@ const Skills = () => {
     },
     {
       title: "Mobile & Desktop",
-      icon: <Smartphone className="h-6 w-6 text-purple-400" />,
+      icon: <Smartphone className="h-6 w-6 text-purple-600 dark:text-purple-400" />,
       color: "purple",
       skills: [
         { name: "React Native", level: 85 },
@@ -83,26 +82,26 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 px-4 bg-gray-800">
+    <section id="skills" className="py-20 px-4 bg-gray-100 dark:bg-gray-800 transition-colors duration-500">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-16 animate-fade-in">Skills & Expertise</h2>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white text-center mb-16 animate-fade-in">Skills & Expertise</h2>
         
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
-              className={`bg-gray-900 border-gray-700 transition-all duration-500 hover:scale-105 hover:shadow-xl ${getHoverColors(category.color)} animate-fade-in opacity-0`}
+              className={`bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 transition-all duration-500 hover:scale-105 hover:shadow-xl ${getHoverColors(category.color)} animate-fade-in opacity-0`}
               style={{
                 animationDelay: `${0.2 + index * 0.1}s`,
                 animationFillMode: 'forwards'
               }}
             >
               <CardHeader>
-                <CardTitle className="text-white flex items-center gap-2 group">
+                <CardTitle className="text-gray-900 dark:text-white flex items-center gap-2 group">
                   <span className="group-hover:scale-110 transition-transform duration-300">
                     {category.icon}
                   </span>
-                  <span className="group-hover:text-gray-100 transition-colors duration-300">
+                  <span className="group-hover:text-gray-600 dark:group-hover:text-gray-100 transition-colors duration-300">
                     {category.title}
                   </span>
                 </CardTitle>
@@ -112,8 +111,8 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex} className="group">
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-300 text-sm group-hover:text-white transition-colors duration-200">{skill.name}</span>
-                        <span className="text-gray-400 text-sm group-hover:text-gray-200 transition-colors duration-200">{skill.level}%</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-200">{skill.name}</span>
+                        <span className="text-gray-600 dark:text-gray-400 text-sm group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-200">{skill.level}%</span>
                       </div>
                       <Progress 
                         value={isVisible ? skill.level : 0} 

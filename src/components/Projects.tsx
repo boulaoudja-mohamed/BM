@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ const Projects = () => {
     {
       title: "Queue Management System",
       description: "A comprehensive queue management solution adopted by the local administration for 14 branches in Sétif. Features real-time queue tracking, customer notifications, and administrative dashboards.",
-      icon: <Users className="h-8 w-8 text-blue-400" />,
+      icon: <Users className="h-8 w-8 text-blue-600 dark:text-blue-400" />,
       tags: ["Web Development", "Real-time", "Admin Dashboard", "Multi-branch"],
       impact: "14 branches in Sétif",
       category: "Enterprise Solution",
@@ -18,7 +17,7 @@ const Projects = () => {
     {
       title: "Attendance Registration Application",
       description: "Advanced attendance tracking system adopted by Sétif University and various private companies. Includes biometric integration, reporting, and automated notifications.",
-      icon: <Building className="h-8 w-8 text-green-400" />,
+      icon: <Building className="h-8 w-8 text-green-600 dark:text-green-400" />,
       tags: ["Mobile App", "Biometric", "University", "Enterprise"],
       impact: "University + Private Companies",
       category: "Educational & Corporate",
@@ -27,7 +26,7 @@ const Projects = () => {
     {
       title: "Payroll Management Program",
       description: "Complete payroll management solution with automated calculations, tax compliance, employee self-service portal, and comprehensive reporting capabilities.",
-      icon: <Calculator className="h-8 w-8 text-purple-400" />,
+      icon: <Calculator className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
       tags: ["Desktop App", "Payroll", "Tax Compliance", "Reporting"],
       impact: "HR Automation",
       category: "Business Application",
@@ -36,7 +35,7 @@ const Projects = () => {
     {
       title: "Warehouse Management System",
       description: "Inventory and warehouse management system with barcode scanning, stock tracking, automated reordering, and integration with accounting systems.",
-      icon: <Package className="h-8 w-8 text-orange-400" />,
+      icon: <Package className="h-8 w-8 text-orange-600 dark:text-orange-400" />,
       tags: ["Inventory", "Barcode", "Automation", "Integration"],
       impact: "Supply Chain Optimization",
       category: "Logistics Solution",
@@ -45,7 +44,7 @@ const Projects = () => {
     {
       title: "ERP System",
       description: "Enterprise Resource Planning system integrating multiple business processes including finance, HR, inventory, and customer management into a unified platform.",
-      icon: <Settings className="h-8 w-8 text-red-400" />,
+      icon: <Settings className="h-8 w-8 text-red-600 dark:text-red-400" />,
       tags: ["ERP", "Integration", "Finance", "Multi-module"],
       impact: "Complete Business Solution",
       category: "Enterprise Platform",
@@ -65,10 +64,10 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 px-4 bg-gray-900">
+    <section id="projects" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-500">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-4 animate-fade-in">Featured Projects</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto animate-fade-in opacity-0 [animation-delay:0.2s] [animation-fill-mode:forwards]">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white text-center mb-4 animate-fade-in">Featured Projects</h2>
+        <p className="text-gray-600 dark:text-gray-400 text-center mb-16 max-w-2xl mx-auto animate-fade-in opacity-0 [animation-delay:0.2s] [animation-fill-mode:forwards]">
           A showcase of enterprise-level solutions I've developed, adopted by universities, 
           local administration, and private companies.
         </p>
@@ -77,7 +76,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className={`bg-gray-800 border-gray-700 transition-all duration-500 hover:scale-105 hover:shadow-2xl ${getHoverColors(project.color)} group animate-fade-in opacity-0`}
+              className={`bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 transition-all duration-500 hover:scale-105 hover:shadow-2xl ${getHoverColors(project.color)} group animate-fade-in opacity-0`}
               style={{
                 animationDelay: `${0.1 + index * 0.1}s`,
                 animationFillMode: 'forwards'
@@ -90,21 +89,21 @@ const Projects = () => {
                       {project.icon}
                     </span>
                     <div>
-                      <CardTitle className="text-white text-xl group-hover:text-gray-100 transition-colors duration-300">{project.title}</CardTitle>
-                      <p className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">{project.category}</p>
+                      <CardTitle className="text-gray-900 dark:text-white text-xl group-hover:text-gray-700 dark:group-hover:text-gray-100 transition-colors duration-300">{project.title}</CardTitle>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-300">{project.category}</p>
                     </div>
                   </div>
-                  <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300">
+                  <Button variant="ghost" size="sm" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-300">
                     <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-300 mb-4 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">{project.description}</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors duration-300">{project.description}</p>
                 
                 <div className="mb-4">
-                  <span className="text-sm font-semibold text-blue-400 group-hover:text-blue-300 transition-colors duration-300">Impact: </span>
-                  <span className="text-gray-300 text-sm group-hover:text-gray-200 transition-colors duration-300">{project.impact}</span>
+                  <span className="text-sm font-semibold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors duration-300">Impact: </span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors duration-300">{project.impact}</span>
                 </div>
                 
                 <div className="flex flex-wrap gap-2">
@@ -112,7 +111,7 @@ const Projects = () => {
                     <Badge 
                       key={tagIndex} 
                       variant="secondary" 
-                      className="bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white hover:scale-105 transition-all duration-300"
+                      className="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 hover:text-gray-900 dark:hover:text-white hover:scale-105 transition-all duration-300"
                     >
                       {tag}
                     </Badge>
@@ -124,7 +123,7 @@ const Projects = () => {
         </div>
         
         <div className="text-center mt-12 animate-fade-in opacity-0 [animation-delay:0.8s] [animation-fill-mode:forwards]">
-          <Button variant="outline" size="lg" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:border-gray-500 hover:scale-105 transition-all duration-300 hover:shadow-lg">
+          <Button variant="outline" size="lg" className="border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-500 hover:scale-105 transition-all duration-300 hover:shadow-lg">
             View All Projects
           </Button>
         </div>
