@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";
@@ -6,7 +5,7 @@ import FloatingElements from "@/components/FloatingElements";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 from-blue-50 via-white to-purple-50 transition-all duration-500 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-all duration-500 relative overflow-hidden">
       <FloatingElements />
       
       {/* Animated background gradient orbs */}
@@ -18,12 +17,12 @@ const Hero = () => {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-white dark:text-white text-gray-900 mb-4 animate-fade-in opacity-0 [animation-delay:0.2s] [animation-fill-mode:forwards] tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4 animate-fade-in opacity-0 [animation-delay:0.2s] [animation-fill-mode:forwards] tracking-tight">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 dark:from-blue-400 dark:via-purple-400 dark:to-green-400 bg-clip-text text-transparent animate-gradient-x">
               Boulaoudja Mohamed
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-300 text-gray-700 mb-6 animate-fade-in opacity-0 [animation-delay:0.4s] [animation-fill-mode:forwards]">
+          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-6 animate-fade-in opacity-0 [animation-delay:0.4s] [animation-fill-mode:forwards]">
             IT Specialist & Full-Stack Developer
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-8 animate-fade-in opacity-0 [animation-delay:0.6s] [animation-fill-mode:forwards]">
@@ -42,7 +41,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <p className="text-lg text-gray-400 dark:text-gray-400 text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in opacity-0 [animation-delay:0.8s] [animation-fill-mode:forwards]">
+        <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in opacity-0 [animation-delay:0.8s] [animation-fill-mode:forwards]">
           Graduate with Bachelor's in Computer Science and Master's in Network Administration & Security. 
           Passionate about creating innovative solutions and building impactful, efficient, and scalable systems.
         </p>
@@ -59,7 +58,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-gray-600 dark:border-gray-600 border-gray-300 text-gray-300 dark:text-gray-300 text-gray-700 hover:bg-gray-800 dark:hover:bg-gray-800 hover:bg-gray-100 hover:border-gray-500 dark:hover:border-gray-500 hover:border-gray-400 hover:scale-105 transition-all duration-300 hover:shadow-lg"
+            className="border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-500 hover:scale-105 transition-all duration-300 hover:shadow-lg"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Get In Touch
@@ -71,7 +70,7 @@ const Hero = () => {
             href="https://github.com/boulaoudja-mohamed" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 dark:text-gray-400 text-gray-600 hover:text-white dark:hover:text-white hover:text-gray-900 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
+            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
           >
             <Github size={24} />
           </a>
@@ -79,13 +78,13 @@ const Hero = () => {
             href="https://www.linkedin.com/in/mohamed-boulaoudja-a74302185" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 dark:text-gray-400 text-gray-600 hover:text-blue-400 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
+            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
           >
             <Linkedin size={24} />
           </a>
           <a 
             href="mailto:boulaoudjamohamd@gmail.com"
-            className="text-gray-400 dark:text-gray-400 text-gray-600 hover:text-green-400 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
+            className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
           >
             <Mail size={24} />
           </a>
@@ -93,7 +92,7 @@ const Hero = () => {
             href="https://wa.me/213675247393" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 dark:text-gray-400 text-gray-600 hover:text-green-500 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
+            className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-500 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg hover:-translate-y-1"
           >
             <MessageCircle size={24} />
           </a>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -38,8 +37,8 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="text-white font-bold text-xl hover:text-blue-400 hover:scale-105 transition-all duration-300 cursor-default">
-            BM
+          <div className="text-white font-bold text-lg md:text-xl hover:text-blue-400 hover:scale-105 transition-all duration-300 cursor-default">
+            Boulaoudja Mohamed
           </div>
 
           {/* Desktop Navigation */}
