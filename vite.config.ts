@@ -16,6 +16,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Use base path for GitHub Pages, but not for Vercel
-  base: process.env.VERCEL ? '/' : '/BM/',
+  // Use base path for GitHub Pages, but not for Vercel or local development
+  base: process.env.VERCEL || mode === 'development' ? '/' : '/BM/',
 }));
