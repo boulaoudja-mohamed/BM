@@ -18,4 +18,8 @@ export default defineConfig(({ mode }) => ({
   },
   // Use base path for GitHub Pages, but not for Vercel or local development
   base: process.env.VERCEL || mode === 'development' ? '/' : '/BM/',
+  define: {
+    // Set environment variables for routing
+    'import.meta.env.VITE_VERCEL': JSON.stringify(process.env.VERCEL || false),
+  },
 }));

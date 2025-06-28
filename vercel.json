@@ -1,5 +1,5 @@
 {
-  "buildCommand": "VERCEL=true npm run build",
+  "buildCommand": "VERCEL=true VITE_VERCEL=true npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
