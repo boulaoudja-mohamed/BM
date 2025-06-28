@@ -1,24 +1,16 @@
-# Welcome to your Lovable project
+# Boulaoudja Portfolio Verse
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/c9292b2c-789d-4a07-9a7a-4c69b567221a
+A modern portfolio website built with Vite, React, TypeScript, shadcn-ui, and Tailwind CSS.
 
 ## How can I edit this code?
 
-There are several ways of editing your application.
+You can:
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/c9292b2c-789d-4a07-9a7a-4c69b567221a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Use your preferred IDE
+- Clone this repo and push changes
+- The only requirement is having Node.js & npm installed
 
 Follow these steps:
 
@@ -52,8 +44,6 @@ npm run dev
 
 ## What technologies are used for this project?
 
-This project is built with:
-
 - Vite
 - TypeScript
 - React
@@ -62,12 +52,8 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/c9292b2c-789d-4a07-9a7a-4c69b567221a) and click on Share -> Publish.
+You can use GitHub Pages, Vercel, or Netlify for deployment.
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain?
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Yes! Most deployment platforms allow you to connect a custom domain.

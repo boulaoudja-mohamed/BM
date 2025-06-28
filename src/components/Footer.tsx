@@ -1,5 +1,4 @@
-
-import { Github, Linkedin, Mail, MessageCircle, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -72,8 +71,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center animate-fade-in opacity-0 [animation-delay:0.4s] [animation-fill-mode:forwards]">
-          <p className="text-gray-400 text-sm flex items-center justify-center gap-2">
-            © {currentYear} Boulaoudja Mohamed. Made with <Heart className="h-4 w-4 text-red-500 hover:scale-125 transition-transform duration-300" /> and passion.
+          <p className="text-gray-400 text-sm">
+            © {currentYear} Boulaoudja Mohamed.
           </p>
         </div>
       </div>
